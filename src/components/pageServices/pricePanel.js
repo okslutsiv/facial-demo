@@ -12,6 +12,7 @@ import {
   CardActions,
   ButtonBase,
   Button,
+  Hidden,
 } from "@material-ui/core"
 import { DotsHorizontal } from "mdi-material-ui"
 import LogoSvg from "../atoms/logoSvg"
@@ -106,7 +107,9 @@ class PricePanel extends React.Component {
                 <Typography gutterBottom variant="h4" className={classes.title}>
                   {title}
                 </Typography>
-                <Typography variant="body1">{description}</Typography>
+                <Hidden smDown>
+                  <Typography variant="body1">{description}</Typography>
+                </Hidden>
                 <DotsHorizontal />
               </CardContent>
             </Grid>
