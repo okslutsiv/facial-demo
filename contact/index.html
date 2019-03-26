@@ -1,0 +1,795 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/facial-demo/styles.a7f6e85225cfa23f94a7.css">@font-face{font-family:corrida-cyr;src:url(/facial-demo/static/Corrida_Cyrillic-3c8c4883cbf0e427383df621183742ce.ttf)}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects;text-decoration:none;color:inherit}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*,:after,:before{box-sizing:inherit}body{padding:0!important}img{max-width:100%;margin:0;padding:0}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style><meta name="generator" content="Gatsby 2.1.37"/><style type="text/css" id="jss-server-side">.jss75 {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss75::-moz-focus-inner {
+  border-style: none;
+}
+.jss75.jss76 {
+  cursor: default;
+  pointer-events: none;
+}
+.jss49 {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 120px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-sizing: border-box;
+  font-weight: 500;
+  line-height: 1.75;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  border-radius: 22px;
+  text-transform: uppercase;
+}
+.jss49:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss49.jss69 {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss49:hover {
+    background-color: transparent;
+  }
+}
+.jss49:hover.jss69 {
+  background-color: transparent;
+}
+.jss50 {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.jss51 {
+  padding: 6px 8px;
+}
+.jss52 {
+  color: #113978;
+}
+.jss52:hover {
+  background-color: rgba(17, 57, 120, 0.08);
+}
+@media (hover: none) {
+  .jss52:hover {
+    background-color: transparent;
+  }
+}
+.jss53 {
+  color: #f51f89;
+}
+.jss53:hover {
+  background-color: rgba(245, 31, 137, 0.08);
+}
+@media (hover: none) {
+  .jss53:hover {
+    background-color: transparent;
+  }
+}
+.jss57 {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 16px;
+}
+.jss57.jss69 {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.jss58 {
+  color: #113978;
+  border: 1px solid rgba(17, 57, 120, 0.5);
+}
+.jss58:hover {
+  border: 1px solid #113978;
+  background-color: rgba(17, 57, 120, 0.08);
+}
+@media (hover: none) {
+  .jss58:hover {
+    background-color: transparent;
+  }
+}
+.jss59 {
+  color: #f51f89;
+  border: 1px solid rgba(245, 31, 137, 0.5);
+}
+.jss59:hover {
+  border: 1px solid #f51f89;
+  background-color: rgba(245, 31, 137, 0.08);
+}
+.jss59.jss69 {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .jss59:hover {
+    background-color: transparent;
+  }
+}
+.jss60 {
+  color: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  background-color: #928590;
+}
+.jss60.jss68 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.jss60:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.jss60.jss69 {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss60:hover {
+  background-color: #f3e6f1;
+}
+@media (hover: none) {
+  .jss60:hover {
+    background-color: #928590;
+  }
+}
+.jss60:hover.jss69 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.jss61 {
+  color: #fff;
+  background-color: #113978;
+}
+.jss61:hover {
+  background-color: #092042;
+}
+@media (hover: none) {
+  .jss61:hover {
+    background-color: #113978;
+  }
+}
+.jss62 {
+  color: #fff;
+  background-color: #f51f89;
+}
+.jss62:hover {
+  background-color: #ce096a;
+}
+@media (hover: none) {
+  .jss62:hover {
+    background-color: #f51f89;
+  }
+}
+.jss66 {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  border-radius: 50%;
+}
+.jss66:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.jss67 {
+  width: auto;
+  height: 48px;
+  padding: 0 16px;
+  min-width: 48px;
+  border-radius: 24px;
+}
+.jss70 {
+  color: inherit;
+  border-color: currentColor;
+}
+.jss71 {
+  width: 40px;
+  height: 40px;
+}
+.jss72 {
+  padding: 4px 8px;
+  min-width: 64px;
+  font-size: 0.8125rem;
+}
+.jss73 {
+  padding: 8px 24px;
+  font-size: 0.9375rem;
+}
+.jss74 {
+  width: 100%;
+}
+.jss13 {
+  margin: 0;
+  display: block;
+}
+.jss14 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.14286em;
+  margin-left: -.04em;
+  letter-spacing: -.04em;
+}
+.jss15 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.30357em;
+  margin-left: -.02em;
+  letter-spacing: -.02em;
+}
+.jss16 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.13333em;
+  margin-left: -.02em;
+}
+.jss17 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.20588em;
+}
+.jss18 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.35417em;
+}
+.jss19 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.16667em;
+}
+.jss20 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  line-height: 1.5em;
+}
+.jss21 {
+  color: rgba(50,45,50, 0.87);
+  font-size: 14px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.jss22 {
+  color: rgba(50,45,50, 0.87);
+  font-size: 16px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+}
+.jss23 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 1.66;
+}
+.jss24 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 500;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+.jss25 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 32px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.jss26 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 28px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.jss27 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 300;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.jss28 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 300;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.jss29 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 300;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.jss30 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 500;
+  line-height: 1.6;
+}
+.jss31 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 1.75;
+}
+.jss32 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 500;
+  line-height: 1.57;
+}
+.jss33 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.75rem;
+  font-family: '-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif';
+  font-weight: 400;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+.jss34 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+.jss35 {
+  text-align: left;
+}
+.jss36 {
+  text-align: center;
+}
+.jss37 {
+  text-align: right;
+}
+.jss38 {
+  text-align: justify;
+}
+.jss39 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jss40 {
+  margin-bottom: 0.35em;
+}
+.jss41 {
+  margin-bottom: 16px;
+}
+.jss42 {
+  color: inherit;
+}
+.jss43 {
+  color: #113978;
+}
+.jss44 {
+  color: #f51f89;
+}
+.jss45 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.jss46 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.jss47 {
+  color: #0b80de;
+}
+.jss48 {
+  display: inline;
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+.jss95 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1300;
+  position: fixed;
+}
+.jss96 {
+  visibility: hidden;
+}
+.jss82 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jss83 {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.jss84 {
+  height: 100%;
+  outline: none;
+}
+.jss85 {
+  margin: 48px;
+  display: flex;
+  position: relative;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.jss86 {
+  flex: 0 1 auto;
+  max-height: calc(100% - 96px);
+}
+.jss87 {
+  margin: 48px auto;
+}
+.jss88 {
+  max-width: 360px;
+}
+@media (max-width:455.95px) {
+  .jss88.jss87 {
+    margin: 48px;
+  }
+}
+.jss89 {
+  max-width: 480px;
+}
+@media (max-width:575.95px) {
+  .jss89.jss87 {
+    margin: 48px;
+  }
+}
+.jss90 {
+  max-width: 768px;
+}
+@media (max-width:863.95px) {
+  .jss90.jss87 {
+    margin: 48px;
+  }
+}
+.jss91 {
+  max-width: 980px;
+}
+@media (max-width:1075.95px) {
+  .jss91.jss87 {
+    margin: 48px;
+  }
+}
+.jss92 {
+  max-width: 1920px;
+}
+@media (max-width:2015.95px) {
+  .jss92.jss87 {
+    margin: 48px;
+  }
+}
+.jss93 {
+  width: 100%;
+}
+.jss94 {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.jss94.jss87 {
+  margin: 0;
+}
+.jss6 {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: calc(50vh - 220px);
+  background-image: radial-gradient(rgba(2,6,13,0.4)20%, rgba(2,6,13,0.2));
+}
+@media (max-width:767.95px) {
+  .jss6 {
+    padding-top: 1rem;
+  }
+}
+.jss7 {
+  width: 90%;
+  color: white;
+  margin: 49px auto;
+  padding: 48px 0;
+  position: relative;
+  max-width: 650px;
+  text-align: center;
+  border-top: 2px solid white;
+  text-shadow: 0 0 12px #092042;
+  border-bottom: 2px solid white;
+}
+.jss7::before {
+  top: -50px;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 50px;
+  content:  "";
+  display: block;
+  position: absolute;
+  background: white;
+}
+.jss7 h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.jss7 p {
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.jss7 h5 {
+  color: white;
+}
+@media (max-width:767.95px) {
+  .jss7 h5 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+.jss8 {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  transform: translateX(-50%);
+  background: rgba(2,6,13,0.2);
+  margin-left: 50%;
+  border-radius: 50%;
+}
+.jss9 {
+  margin: 11px 14px;
+  opacity: 0.85;
+}
+.jss10 {
+  color: white;
+  border: 2px solid white;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(-50%);
+  background: rgba(2,6,13,0.2);
+  margin-left: 50%;
+  border-radius: 22px;
+}
+@media (max-width:979.95px) {
+  .jss10 {
+    flex-flow: column;
+  }
+  .jss10 button {
+    width: 250px;
+    border-bottom: 1px solid white;
+  }
+}
+@media (min-width:768px) {
+  .jss10 {
+    flex-flow: row;
+  }
+  .jss10 button {
+    width: 120px;
+    border-right: 1px solid white;
+  }
+}
+.jss11 {
+  margin: 1px -1px 0;
+  height: 44px;
+  text-align: center;
+  font-weight: 300;
+  border-right: 1px solid white;
+  border-radius: 0;
+}
+.jss11:focus {
+  background-color: #f51f89;
+}
+.jss11:hover {
+  background-color: #f51f89;
+}
+.jss12 {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.jss5 {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: calc(50vh - 250px);
+  background-image: radial-gradient(rgba(2,6,13,0.4)20%, rgba(2,6,13,0.2));
+}
+@media (max-width:767.95px) {
+  .jss5 {
+    padding-top: 1rem;
+  }
+}
+.jss5 p {
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.jss5 h5 {
+  color: white;
+}
+.jss5 footer {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background: rgba(2,6,13,0.4);
+  text-align: center;
+  padding-bottom: 5px;
+}
+.jss5 footer p {
+  text-transform: none;
+}
+@media (max-width:767.95px) {
+  .jss5 footer {
+    position: static;
+    margin-top: 48px;
+  }
+}
+@media (max-width:767.95px) {
+  .jss5 h5 {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+.jss5 p span {
+  margin: 0 20px;
+}
+@media (max-width:767.95px) {
+  .jss5 p span {
+    display: block;
+  }
+}
+.jss78 {
+  text-align: center;
+}
+.jss79 {
+  background-color: rgba(2,6,13,0.6);
+}
+.jss80 {
+  margin: 70px auto 100px;
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  background: rgba(242,241,242,0.98);
+  max-height: none;
+}
+@media (max-width:979.95px) {
+  .jss80 {
+    margin: (48px 32px)!important;
+  }
+}
+.jss1 {
+  padding: 0 2rem 2rem;
+  background-image: url(/facial-demo/static/bg-mix-48a255a6aaa3a21dd0bf5c57bb4e13db.png);
+}
+@media (max-width:767.95px) {
+  .jss1 {
+    padding: 4px;
+  }
+}
+.jss2 {
+  padding: 32px;
+  text-align: right;
+  padding-left: 15%;
+}
+.jss2 p {
+  color: #113978;
+  opacity: 0.8;
+  line-height: 1.8;
+  font-weight: 500;
+}
+@media (max-width:767.95px) {
+  .jss2 {
+    width: calc(100% - 16px);
+    margin: 8px;
+    padding: 8px;
+  }
+}
+.jss3 {
+  text-align: center;
+}
+.jss4 {
+  margin: 36px 24px 0;
+}</style><title data-react-helmet="true">BOOK APPOINTMENT | Салон краси BloomMe</title><meta data-react-helmet="true" name="description" content="Ваша краса - наша професія. З любов&#x27;ю до Вас"/><meta data-react-helmet="true" property="og:title" content="BOOK APPOINTMENT"/><meta data-react-helmet="true" property="og:description" content="Ваша краса - наша професія. З любов&#x27;ю до Вас"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="OksLutsiv"/><meta data-react-helmet="true" name="twitter:title" content="BOOK APPOINTMENT"/><meta data-react-helmet="true" name="twitter:description" content="Ваша краса - наша професія. З любов&#x27;ю до Вас"/><link rel="shortcut icon" href="/facial-demo/icons/icon-48x48.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="manifest" href="/facial-demo/manifest.webmanifest"/><meta name="theme-color" content="#113978, #f51f89"/><link rel="apple-touch-icon" sizes="48x48" href="/facial-demo/icons/icon-48x48.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="72x72" href="/facial-demo/icons/icon-72x72.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="96x96" href="/facial-demo/icons/icon-96x96.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="144x144" href="/facial-demo/icons/icon-144x144.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="192x192" href="/facial-demo/icons/icon-192x192.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="256x256" href="/facial-demo/icons/icon-256x256.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="384x384" href="/facial-demo/icons/icon-384x384.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link rel="apple-touch-icon" sizes="512x512" href="/facial-demo/icons/icon-512x512.png?v=615be2db75bae56136d1452027f1b09f7e156172"/><link as="script" rel="preload" href="/facial-demo/component---src-pages-contact-js-7721021850d037015d1f.js"/><link as="script" rel="preload" href="/facial-demo/app-fa53844042a3f0515b91.js"/><link as="script" rel="preload" href="/facial-demo/styles-858870fc17f69c98ed0a.js"/><link as="script" rel="preload" href="/facial-demo/3-c6b13b9f7e720a92a41b.js"/><link as="script" rel="preload" href="/facial-demo/2-a5b63634117f02c94e98.js"/><link as="script" rel="preload" href="/facial-demo/1-076ae9aac45125c0cb38.js"/><link as="script" rel="preload" href="/facial-demo/webpack-runtime-238f9dd305ba743bfbbf.js"/><link as="fetch" rel="preload" href="/facial-demo/static/d/589/path---contact-26-a-cd9-PFkBH4WbJty2TDaONJ7g3E4DJI.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class=" gatsby-background-image-ruwesrr gatsby-image-wrapper" style="position:relative;overflow:hidden;opacity:0.99;background-size:cover;min-height:5vh"><style>
+          .gatsby-background-image-ruwesrr:before,
+          .gatsby-background-image-ruwesrr:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            -webkit-transition-delay: 0.25s;
+            -moz-transition-delay: 0.25s;
+            -o-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            -webkit-transition: opacity 0.5s;
+            -moz-transition: opacity 0.5s;
+            -o-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+          }
+          .gatsby-background-image-ruwesrr:before {
+            z-index: -100;
+            
+            background-repeat: no-repeat;
+            
+            opacity: 0; 
+          }
+          .gatsby-background-image-ruwesrr:after {
+            z-index: -101;
+            
+            background-image: url(data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABV45U6CAH/8QAHBAAAQMFAAAAAAAAAAAAAAAAAgABMQMSFCEi/9oACAEBAAEFAuSalYsbYSEL/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBFB/9oACAEDAQE/Aax//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgIDAAAAAAAAAAAAAAAAASEAERIgQf/aAAgBAQAGPwIDkxtRFaf/xAAbEAEAAwEAAwAAAAAAAAAAAAABABEhMUFRgf/aAAgBAQABPyE9kMKL7PfEVajWQlsJx+xW5//aAAwDAQACAAMAAAAQ6w//xAAVEQEBAAAAAAAAAAAAAAAAAAAQkf/aAAgBAwEBPxCh/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAh/9oACAECAQE/EHCb/8QAHBABAAICAwEAAAAAAAAAAAAAAQARIUExYYFx/9oACAEBAAE/EGnKxq13EaHJtlRljeUFnZqDqC618hAgAvD1hKCns//Z);
+            background-repeat: no-repeat;
+          }
+        </style><noscript><picture><source type='image/webp' srcset="/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/3e8cd/header-dark.webp 625w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/db8df/header-dark.webp 1250w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/c0d52/header-dark.webp 2500w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/49271/header-dark.webp 3000w" sizes="(max-width: 2500px) 100vw, 2500px" /><img sizes="(max-width: 2500px) 100vw, 2500px" srcset="/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/26f2c/header-dark.jpg 625w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/98685/header-dark.jpg 1250w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/5f3ab/header-dark.jpg 2500w,
+/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/67af2/header-dark.jpg 3000w" src="/facial-demo/static/35534bb5baeef27df0ed21022e904c9e/5f3ab/header-dark.jpg" alt="" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript><div class="jss5"><header><div class="jss8"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" stroke="white" fill="white" class="jss9" viewBox="0 0 64 64"><path d="M61.229,38.319a42.037,42.037,0,0,0-9.33-.827c1.8-4.555,2.171-10.047,1.086-16.371a1,1,0,0,0-1.225-.8,35.321,35.321,0,0,0-9.549,4.3,31.238,31.238,0,0,0-9.52-13.4,1,1,0,0,0-1.324.09c-4.435,4.511-7.4,9.146-8.852,13.8A35.436,35.436,0,0,0,12.24,20.319a1,1,0,0,0-1.225.8c-1.085,6.324-.71,11.815,1.086,16.371a42.037,42.037,0,0,0-9.33.827.994.994,0,0,0-.658.512,1,1,0,0,0-.042.832c4.346,10.882,12.817,13.389,19.7,13.389A32.955,32.955,0,0,0,32,51.354a32.948,32.948,0,0,0,10.23,1.7c6.882,0,15.354-2.508,19.7-13.389a1,1,0,0,0-.042-.832A.994.994,0,0,0,61.229,38.319ZM49.682,37.6a26.337,26.337,0,0,0-10.494,2.9.982.982,0,0,0-.462.26h0a17.242,17.242,0,0,0-5.189,4.609,23.872,23.872,0,0,0-.509-5.5c1.2-5.077,4.285-9.4,9.2-12.858a34.769,34.769,0,0,1,8.967-4.437C52.049,28.456,51.533,33.5,49.682,37.6ZM32.149,13.368c1.761,1.559,6.441,6.167,8.345,12.447A24.185,24.185,0,0,0,32,36.5,23.833,23.833,0,0,0,24.226,26.36C25.435,22.021,28.086,17.657,32.149,13.368Zm-19.34,9.2a34.439,34.439,0,0,1,9.672,4.95h0a21.426,21.426,0,0,1,8.492,12.345,23.822,23.822,0,0,0-.51,5.5c-4.051-5.44-10.49-7.314-16.146-7.768C12.467,33.5,11.951,28.455,12.809,22.571Zm7.585,28.488C12.907,50.65,7.534,46.944,4.405,40.04c4.533-.772,20.881-2.608,26.272,9.648A30.251,30.251,0,0,1,20.394,51.059Zm23.212,0a30.31,30.31,0,0,1-10.283-1.371C38.713,37.433,55.06,39.269,59.6,40.04,56.466,46.944,51.093,50.65,43.606,51.059Z"></path><rect x="31" y="18.292" width="2" height="2"></rect><rect x="31" y="22.292" width="2" height="2"></rect><rect x="31" y="26.292" width="2" height="2"></rect><path d="M14,26.292a15.238,15.238,0,0,0,2.168,7.555l1.664-1.11A13.4,13.4,0,0,1,16,26.291Z"></path><path d="M50,26.292H48a13.31,13.31,0,0,1-1.832,6.445l1.664,1.11A15.238,15.238,0,0,0,50,26.292Z"></path></svg></div><div class="jss7"><h1 class="jss13 jss25">BlooMe</h1><h5 class="jss13 jss29">Косметологія</h5><p class="jss13 jss21">Ваша краса - наша професія.<wbr/> З любов&#x27;ю до Вас</p></div><div class="jss10"><a href="/facial-demo/about"><button class="jss75 jss49 jss11 jss51 jss54 jss73 jss70" tabindex="0" type="button"><span class="jss50 jss12">Про нас</span></button></a> <a href="/facial-demo/services"><button class="jss75 jss49 jss11 jss51 jss54 jss73 jss70" tabindex="0" type="button"><span class="jss50 jss12">Послуги</span></button></a> <a href="/facial-demo/team"><button class="jss75 jss49 jss11 jss51 jss54 jss73 jss70" tabindex="0" type="button"><span class="jss50 jss12">Команда</span></button></a> <a href="/facial-demo/contact"><button class="jss75 jss49 jss11 jss51 jss54 jss73 jss70" tabindex="0" type="button"><span class="jss50 jss12">Записатись</span></button></a> </div></header><main></main><footer><p class="jss13 jss21"><span>© 2019 design&amp;development</span><span>OksLutsiv</span></p></footer></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-pages-contact-js","jsonName":"contact-26a","path":"/contact/"};window.dataPath="589/path---contact-26-a-cd9-PFkBH4WbJty2TDaONJ7g3E4DJI";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-fa53844042a3f0515b91.js"],"component---src-pages-404-js":["/component---src-pages-404-js-1e4089ebb6ffe27cf0d5.js"],"component---src-pages-about-js":["/component---src-pages-about-js-78b588b4c30df26ac19f.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-7721021850d037015d1f.js"],"component---src-pages-index-js":["/component---src-pages-index-js-2579318378b98bdc1ed9.js"],"component---src-pages-page-2-js":["/component---src-pages-page-2-js-dfff81a56e1a4afa71c6.js"],"component---src-pages-services-js":["/component---src-pages-services-js-c42fb9c286ec3ebe7dc0.js"],"component---src-pages-team-js":["/component---src-pages-team-js-c67151a29649d3041e3d.js"],"pages-manifest":["/pages-manifest-293b907dde64c56d413d.js"]};/*]]>*/</script><script src="/facial-demo/webpack-runtime-238f9dd305ba743bfbbf.js" async=""></script><script src="/facial-demo/1-076ae9aac45125c0cb38.js" async=""></script><script src="/facial-demo/2-a5b63634117f02c94e98.js" async=""></script><script src="/facial-demo/3-c6b13b9f7e720a92a41b.js" async=""></script><script src="/facial-demo/styles-858870fc17f69c98ed0a.js" async=""></script><script src="/facial-demo/app-fa53844042a3f0515b91.js" async=""></script><script src="/facial-demo/component---src-pages-contact-js-7721021850d037015d1f.js" async=""></script></body></html>
