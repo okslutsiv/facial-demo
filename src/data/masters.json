@@ -1,0 +1,35 @@
+[
+  {
+    "id": "irinagriniv",
+    "name": "Ірина Гринів",
+    "image": {
+      "src": "../images/team/master1.png"
+    },
+    "specialty": "дерматокосметолог",
+    "graduated": "ЛНМУ ім.Данила Галицького",
+
+    "chipData": [
+      "ЛНМУ ім.Данила Галицького",
+      "Міжнародна школа косметології Mediocris",
+      "Мезотерапія та Біоревіталізація в естетиці обличчя та тіла»",
+      "TOTIS Farma “Пілінги»"
+    ],
+    "description": "Професійний стаж 5 років",
+    "avatar": { "src": "../images/team/master1a.png" }
+  },
+  {
+    "id": "olenaivaniv",
+    "name": "Олена Іванів",
+    "image": {
+      "src": "../images/team/master2.png"
+    },
+    "specialty": "дерматокосметолог",
+    "graduated": "Львівський Медичний Інститут",
+    "chipData": [
+      "Медичний коледж «Монада»",
+      "Навчально-медичний центр «Персона Люкс»"
+    ],
+    "description": "Професійний стаж 7 років.",
+    "avatar": { "src": "../images/team/master2a.png" }
+  }
+]

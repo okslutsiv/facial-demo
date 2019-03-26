@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "Таким може бути ваш сайт: привабливим, швидким та функціональним",
+  "version": "0.1.0",
+  "author": "Оксана Луців <okslutsiv@gmail.com>",
+  "dependencies": {
+    "@date-io/date-fns": "^1.1.0",
+    "@material-ui/core": "^3.9.2",
+    "core-js": "^2.6.5",
+    "date-fns": "^2.0.0-alpha.27",
+    "gatsby": "^2.1.31",
+    "gatsby-background-image": "^0.2.72",
+    "gatsby-image": "^2.0.33",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sharp": "^2.0.28",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-json": "^2.1.11",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "material-ui-pickers": "^2.2.4",
+    "mdi-material-ui": "^5.10.0",
+    "pigeon-maps": "^0.11.11",
+    "pigeon-marker": "^0.3.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-input-mask": "^2.0.4",
+    "react-jss": "^8.6.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
