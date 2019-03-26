@@ -7,6 +7,7 @@ module.exports = {
     description: `Ваша краса - наша професія. З любов'ю до Вас`,
     author: `OksLutsiv`,
   },
+  pathPrefix: "/facial-demo",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,

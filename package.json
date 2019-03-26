@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.0.24",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.17",
+    "gh-pages": "^2.0.1",
     "material-ui-pickers": "^2.2.4",
     "mdi-material-ui": "^5.10.0",
     "pigeon-maps": "^0.11.11",
@@ -43,7 +44,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": ""
+    "test": "",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",

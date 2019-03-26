@@ -19,7 +19,7 @@ function Index(props) {
 
   return (
     <Layout>
-      <SEO title="Page one" />
+      <SEO title="Косметологія BLOOME" />
     </Layout>
   )
 }
