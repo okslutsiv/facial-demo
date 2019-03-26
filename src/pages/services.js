@@ -50,7 +50,12 @@ function Services({ classes, data }) {
       <Main>
         <HeroServices />
         <div className={classes.brands}>
-          <img src={window.innerWidth < 500 ? brandsSm : brands} />
+          <img
+            srcSet={`${brandsSm} 300w, 
+            ${brands} 500w`}
+            src={brands}
+            alt="brands"
+          />
         </div>
 
         <div className={classes.root}>{renderService()}</div>
