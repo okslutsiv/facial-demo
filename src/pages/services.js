@@ -51,9 +51,10 @@ function Services({ classes, data }) {
         <HeroServices />
         <div className={classes.brands}>
           <img
-            srcSet={`${brandsSm} 300w, 
-            ${brands} 500w`}
+            srcSet={`${brandsSm} 500w, 
+            ${brands} 1000w`}
             src={brands}
+            sizes="(max-width:500px) (min-width:501px)"
             alt="brands"
           />
         </div>
