@@ -136,7 +136,9 @@ class PricePanel extends React.Component {
                       >
                         {title}
                       </Typography>
-                      <Typography variant="body1">{description}</Typography>
+                      <Hidden smDown>
+                        <Typography variant="body1">{description}</Typography>
+                      </Hidden>
                       <DotsHorizontal />
                     </CardContent>
                   </Grid>
@@ -175,6 +177,9 @@ class PricePanel extends React.Component {
         >
           <CardContent className={classes.content}>
             <PriceTable pricelist={pricelist} />
+            <Hidden mdUp>
+              <Typography variant="body1">{description}</Typography>
+            </Hidden>
           </CardContent>
         </Collapse>
       </Card>
