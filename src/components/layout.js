@@ -1,13 +1,25 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import { StaticQuery, graphql } from "gatsby"
 import { withStyles, Typography } from "@material-ui/core"
 import Background from "../images/processed/header-bg"
 
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
 
 const styles = theme => ({
+  "@global": {
+    a: {
+      backgroundColor: "transparent",
+      textDecoration: "none",
+      color: "inherit",
+      "@global:active": {
+        outlineWidth: 0,
+      },
+      "@global:hover": {
+        outlineWidth: 0,
+      },
+    },
+  },
   root: {
     margin: "0 auto",
     minHeight: "100vh",
