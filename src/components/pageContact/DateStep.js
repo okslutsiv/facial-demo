@@ -36,6 +36,9 @@ export const styles = theme => {
       minWidth: 270,
       margin: " 2rem auto",
       padding: 16,
+      [theme.breakpoints.down("sm")]: {
+        width: "90%",
+      },
     },
     formControl: {
       margin: 16,
@@ -146,6 +149,6 @@ DateStep.propTypes = {
   handleDateChange: PropTypes.func,
   handleDaypartChange: PropTypes.func,
   date: PropTypes.instanceOf(Date),
-  daypart: PropTypes.array,
+  daypart: PropTypes.string,
 }
 export default withStyles(styles)(DateStep)

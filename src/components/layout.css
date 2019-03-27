@@ -1,13 +1,19 @@
-@font-face {
-  font-family: corrida-cyr;
-  src: url(../fonts/Corrida_Cyrillic.ttf);
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: inherit;
+}
+a:active,
+a:hover {
+  outline-width: 0;
 }
 
 /* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-} */
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -196,7 +202,7 @@ textarea {
   box-sizing: border-box;
   overflow-y: scroll;
 } */
-* {
+/* * {
   box-sizing: inherit;
 }
 *:before {
@@ -604,4 +610,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+}  */

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import withRoot from "../components/MuiWrappers/withRoot"
-import { withStyles } from "@material-ui/core"
+import { withStyles, Hidden } from "@material-ui/core"
 import Main from "../components/main"
 import HeroServices from "../components/pageServices/heroServices"
 import PricePanel from "../components/pageServices/pricePanel"
@@ -28,6 +28,9 @@ const styles = theme => ({
 
   brands: {
     margin: "36px 24px 0",
+    "& img": {
+      maxWidth: "100%",
+    },
   },
 })
 
@@ -50,12 +53,12 @@ function Services({ classes, data }) {
       <Main>
         <HeroServices />
         <div className={classes.brands}>
-          <img
-            srcSet={`${brandsSm} 500w, 
-            ${brands} 1000w`}
-            src={brands}
-            alt="brands"
-          />
+          <Hidden smDown>
+            <img src={brands} alt="brands" />
+          </Hidden>
+          <Hidden mdUp>
+            <img src={brandsSm} alt="brands" />
+          </Hidden>
         </div>
 
         <div className={classes.root}>{renderService()}</div>

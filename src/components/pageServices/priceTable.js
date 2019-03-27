@@ -32,6 +32,10 @@ const styles = theme => {
       "&:nth-of-type(even)": {
         backgroundColor: grey[50],
       },
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+        letterSpacing: 0.3,
+      },
     },
     price: {
       color: error.dark,

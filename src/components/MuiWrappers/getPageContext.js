@@ -16,6 +16,14 @@ const theme = createMuiTheme({
           "'-apple - system','BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue','sans - serif'",
       },
     },
+    MuiDialog: {
+      paperWidthSm: {
+        maxWidth: 960,
+        "&$paperScrollBody": {
+          ["@media (max-width:576px)"]: { margin: 0 },
+        },
+      },
+    },
   },
   breakpoints: {
     values: {

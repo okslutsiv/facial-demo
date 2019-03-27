@@ -46,6 +46,12 @@ const styles = theme => {
     },
     collapse: {
       marginTop: "3rem",
+      "& p": {
+        [theme.breakpoints.down("sm")]: {
+          fontSize: 14,
+          letterSpacing: 0.3,
+        },
+      },
     },
     title: {
       textAlign: "center",
@@ -99,10 +105,10 @@ class PricePanel extends React.Component {
       <>
         <ButtonBase onClick={this.handleExpandClick}>
           <Grid container justify="center" alignContent="flex-end">
-            <Grid item xs={10} sm={4}>
+            <Grid item xs={12} md={4}>
               <CardMedia className={classes.media} image={image} />
             </Grid>
-            <Grid item xs={12} sm={8}>
+            <Grid item xs={12} md={8}>
               <CardContent className={classes.content}>
                 <Typography gutterBottom variant="h4" className={classes.title}>
                   {title}
@@ -119,55 +125,55 @@ class PricePanel extends React.Component {
     )
     return (
       <Card className={classes.card}>
-        <Grid container>
-          {leftImg ? (
-            leftImgPanel
-          ) : (
-            <>
-              {" "}
-              <ButtonBase onClick={this.handleExpandClick}>
-                <Grid container justify="center" alignContent="flex-end">
-                  <Grid item xs={12} sm={8}>
-                    <CardContent className={classes.content}>
-                      <Typography
-                        gutterBottom
-                        variant="h4"
-                        className={classes.title}
-                      >
-                        {title}
-                      </Typography>
-                      <Hidden smDown>
-                        <Typography variant="body1">{description}</Typography>
-                      </Hidden>
-                      <DotsHorizontal />
-                    </CardContent>
-                  </Grid>
-                  <Grid item xs={10} sm={4}>
-                    <CardMedia className={classes.media} image={image} />
-                  </Grid>
+        {/* <Grid container> */}
+        {leftImg ? (
+          leftImgPanel
+        ) : (
+          <>
+            {" "}
+            <ButtonBase onClick={this.handleExpandClick}>
+              <Grid container justify="center" alignContent="flex-end">
+                <Grid item xs={12} md={8}>
+                  <CardContent className={classes.content}>
+                    <Typography
+                      gutterBottom
+                      variant="h4"
+                      className={classes.title}
+                    >
+                      {title}
+                    </Typography>
+                    <Hidden smDown>
+                      <Typography variant="body1">{description}</Typography>
+                    </Hidden>
+                    <DotsHorizontal />
+                  </CardContent>
                 </Grid>
-              </ButtonBase>
-            </>
-          )}
-          <CardActions className={classes.actions} disableActionSpacing>
-            <Button
-              onClick={this.handleExpandClick}
-              variant="contained"
-              color="secondary"
-              className={classes.button}
-              aria-expanded={this.state.expanded}
-              aria-label="Show more"
-              size="small"
-            >
-              <LogoSvg
-                width="32px"
-                height="32px"
-                stroke="white"
-                className={expanded ? classes.expandOpen : classes.expand}
-              />
-            </Button>
-          </CardActions>
-        </Grid>
+                <Grid item xs={12} md={4}>
+                  <CardMedia className={classes.media} image={image} />
+                </Grid>
+              </Grid>
+            </ButtonBase>
+          </>
+        )}
+        <CardActions className={classes.actions} disableActionSpacing>
+          <Button
+            onClick={this.handleExpandClick}
+            variant="contained"
+            color="secondary"
+            className={classes.button}
+            aria-expanded={this.state.expanded}
+            aria-label="Show more"
+            size="small"
+          >
+            <LogoSvg
+              width="32px"
+              height="32px"
+              stroke="white"
+              className={expanded ? classes.expandOpen : classes.expand}
+            />
+          </Button>
+        </CardActions>
+        {/* </Grid> */}
 
         <Collapse
           in={this.state.expanded}

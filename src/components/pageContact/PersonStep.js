@@ -22,6 +22,9 @@ export const styles = theme => {
       width: "60%",
       minWidth: 270,
       margin: " 2rem auto",
+      [theme.breakpoints.down("sm")]: {
+        width: "90%",
+      },
     },
     root: {
       display: "flex",

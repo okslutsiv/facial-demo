@@ -44,6 +44,7 @@ const styles = theme => {
     success: {
       padding: "2rem 3rem",
       "& p": { lineHeight: 2 },
+      width: "98%",
       maxWidth: 600,
       textAlign: "justify",
       margin: "1rem auto",
@@ -58,7 +59,15 @@ const styles = theme => {
       [theme.breakpoints.down("sm")]: {
         padding: "16px 8px",
         textAlign: "left",
+
+        "& p": { letterSpacing: -0.5 },
+        textAlign: "left",
       },
+    },
+    check: {
+      textAlign: "center",
+      margin: "1rem auto",
+      borderTop: `1px solid ${lavander[100]}`,
     },
 
     backButton: {
@@ -284,7 +293,7 @@ class StepperAppoint extends React.Component {
                     Ваш контактний номер телефону{" "}
                     <span>{this.state.phone}</span>
                   </Typography>
-                  <Typography>
+                  <Typography className={classes.check}>
                     {" "}
                     Все вірно?
                     <br /> Будь-ласка, натисніть кнопку <span>"Надіслати"</span>

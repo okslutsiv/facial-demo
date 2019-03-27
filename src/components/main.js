@@ -15,15 +15,10 @@ const styles = theme => ({
     background: "rgba(242,241,242,0.98)",
     padding: "16px 0",
     maxHeight: "none",
-    width: "90%",
-    maxWidth: 960,
+    width: "80%",
     overflow: "hidden",
     position: "relative",
     margin: "70px auto ",
-    [theme.breakpoints.only("md")]: {
-      margin: 48,
-      width: "auto",
-    },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       borderRadius: 0,
@@ -42,7 +37,7 @@ function Main({ children, classes }) {
         open={true}
         onClose={handleClose}
         scroll="body"
-        maxWidth="md"
+        maxWidth="sm"
         transitionDuration={500}
         classes={{
           root: classes.root,
